@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <nav>
-        <a href="#home">Home</a>
-    </nav>
+  </head>
+  <body>
+    <h2>Welcome to espace admin</h2>
 
-    <button type="button" id="add">Add Restaurant</button>
-
-    <div class="form-container" style="display: none;"> <!-- hidden since we open page web  -->
-        <h1>Add Your Restaurant</h1>
-        <form action="#" method="post" enctype="multipart/form-data">
-            <label for="name">Restaurant Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="location">Location:</label>
-            <input type="text" id="location" name="location" required>
-
-            <label for="cuisine">Cuisine Type:</label>
-            <input type="text" id="cuisine" name="cuisine" required>
-
-            <label for="hours">Opening Hours:</label>
-            <input type="text" id="hours" name="hours" placeholder="e.g., Mon-Fri: 9am - 10pm" required>
-
-            <label for="pictures">Upload Pictures:</label>
-            <input type="url" id="picture-link" name="picture-link" placeholder="https://example.com/image.jpg" required>
-            
-            <div class="button-container">
-                <button id="submit" type="submit">Submit</button>
-                <button type="button" class="cancel-btn">Cancel</button>
-            </div>
-        </form>
+    <div class="container">
+      <input type="text" id="name" placeholder="Name" />
+      <input type="text" id="localisation" placeholder="Locelisation" />
+      <input type="texte" id="Cuisinetype" placeholder="Cuisine Type" />
+      <input
+        type="text"
+        id="openningtime"
+        placeholder="e.g., Mon-Fri: 9am - 10pm"
+      />
+      <input
+        type="text"
+        id="picture-link"
+        name="picture-link"
+        placeholder="https://example.com/image.jpg"
+        required
+      />
+      <button id="add">Add restaurant</button>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Our Restaurant | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-        <p>Follow us: 
-            <a href="#">Instagram</a> | 
-            <a href="#">Facebook</a> | 
-            <a href="#">Twitter</a>
-        </p>
-    </footer>
+    <div id="restaurentslist"></div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-</body>
-</html>
+    <h2>Welcome to our restaurant</h2>
+
+    <footer>
+      <p>
+        &copy; 2024 Our Restaurant | <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a>
+      </p>
+      <p>
+        Follow us: <a href="#">Instagram</a> | <a href="#">Facebook</a> |
+        <a href="#">Twitter</a>
+      </p>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+  <script src="index.js"></script>
+
+
