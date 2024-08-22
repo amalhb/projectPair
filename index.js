@@ -1,3 +1,4 @@
+
 /*function makerestaurant(
   Restaurantbuffet,
   Bistrot,
@@ -66,16 +67,7 @@ var addrestaurant = function () {
 $("#add").on("click", function () {
   class1.addrestaurant();
 });
-///////////////
-// $(document).ready(function () {
-//   $("#add").on("click", function () {
-//     $(".form-container").show();
-//   });
 
-//   $(document).on("click", ".cancel-btn", function () {
-//     $(".form-container").hide();
-//   });
-// });
 /////////////////////////////////////////////////////////////////////////////////
 var displayAllRestaurants = function () {
   $("#restaurantslist").empty();
