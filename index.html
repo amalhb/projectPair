@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,31 +8,85 @@
     <title>Document</title>
   </head>
   <body>
-    <h2>Welcome to espace admin</h2>
+    <div class="top-header">
+      <h2>Welcome to espace admin</h2>
+      <div class="search-bar">
+        <input
+          type="text"
+          class="Search"
+          placeholder="Enter type  of cuisine"
+        />
+        <button id="searchg">Rechercher</button>
+      </div>
+    </div>
+    <div class="">
+      <h2>Add Restaurants</h2>
+      <button class="add-btn">Add Restaurant</button>
+      <div class="adding-rest">
+        <input type="text" class="add-input" id="name" placeholder="Name" />
+        <input
+          type="text"
+          class="add-input"
+          id="localisation"
+          placeholder="Locelisation"
+        />
+        <input
+          type="texte"
+          class="add-input"
+          id="Cuisinetype"
+          placeholder="Cuisine Type"
+        />
+        <input
+          type="text"
+          id="openningtime"
+          placeholder="e.g., Mon-Fri: 9am - 10pm"
+          class="add-input"
+        />
+        <input
+          type="text"
+          id="picture-link"
+          name="picture-link"
+          placeholder="https://example.com/image.jpg"
+          class="add-input"
+          required
+        />
+        <button id="add-btn">Add restaurant</button>
+      </div>
+    </div>
+    <h2 class="myrest-title">My Restaurant</h2>
 
-    <div class="container">
-      <input type="text" id="name" placeholder="Name" />
-      <input type="text" id="localisation" placeholder="Locelisation" />
-      <input type="texte" id="Cuisinetype" placeholder="Cuisine Type" />
+    <div class="restaurentslist"></div>
+    <div class="update-rest">
+      <input type="text" class="add-input" id="updatename" placeholder="Name" />
       <input
         type="text"
-        id="openningtime"
-        placeholder="e.g., Mon-Fri: 9am - 10pm"
+        class="add-input"
+        id="updatelocalisation"
+        placeholder="Locelisation"
+      />
+      <input
+        type="texte"
+        class="add-input"
+        id="updateCuisinetype"
+        placeholder="Cuisine Type"
       />
       <input
         type="text"
-        id="picture-link"
+        id="updateopenningtime"
+        placeholder="e.g., Mon-Fri: 9am - 10pm"
+        class="add-input"
+      />
+      <input
+        type="text"
+        id="updatepicture-link"
         name="picture-link"
         placeholder="https://example.com/image.jpg"
+        class="add-input"
         required
       />
-      <button id="add">Add restaurant</button>
+      <button id="update-btn">update restaurant</button>
     </div>
-
-    <div id="restaurentslist"></div>
-
-    <h2>Welcome to our restaurant</h2>
-
+  </div>
     <footer>
       <p>
         &copy; 2024 Our Restaurant | <a href="#">Privacy Policy</a> |
@@ -47,5 +100,4 @@
   </body>
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
   <script src="index.js"></script>
-
-
+</html>
