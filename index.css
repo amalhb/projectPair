@@ -1,36 +1,129 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('https://i.pinimg.com/564x/52/91/7c/52917c34da433418fda46f8adb786d74.jpg');
-    background-size: cover;
-    background-position: center;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: poppins;
+}
+.top-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 
+.Search{
+  padding: 10px;
+  width: 15rem;
+  border: none;
+  background-color: rgb(226, 226, 226);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
 
+#searchg{
+  border: none;
+  padding: 10px;
+  background-color: rgb(9, 118, 148);
+  border-radius: 14px;
+  color:white;
+}
+.restaurant-cards{
   
+  width: 17.5rem;
+  font-size: 14px;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 16px;
+}
+.rest-img{
+  border-radius: 16px;
+}
+.adding-rest{
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.add-input{
+  width: 19rem;
+  padding: 14px;
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  background-color: rgb(226, 226, 226);
 
-  h2 {
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
-  }
+}
+#add-btn{
+  border: none;
+  padding: 10px;
+  background-color: rgb(9, 118, 148);
+  border-radius: 14px;
+  color:white;
+}
+.add-btn{
+  border: none;
+  padding: 10px;
+  background-color: rgb(9, 118, 148);
+  border-radius: 14px;
+  color:white;
+}
 
- 
 
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
+.restaurant-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin-top: 30px;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.05);
+}
+
+.restaurant-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.restaurant-info {
+  padding: 16px;
+  background-color: #fff;
+}
+
+.restaurant-name {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.opening-time,
+.cuisine-type {
+  margin: 8px 0;
+  color: #666;
+}
+.restaurentslist{
+  display: flex;
+  gap: 10px;
+}
+.update-btn{
+
+  margin: 8px 0;
+  color: #666;
+
+
+}
+
+
 
