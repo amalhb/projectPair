@@ -78,7 +78,6 @@ var displayAllRestaurants = function () {
   for (var i = 0; i < class1.restaurants.length; i++) {
     $(".restaurentslist").append(
       `<div class="restaurant-card">
-            <button class="delete-btn" data-id="${this.restaurants[i].id}">delet</button>
 
         <img src=${class1.restaurants[i].image} alt="Restaurant Image" class="restaurant-img">
         <div class="restaurant-info">
@@ -87,7 +86,7 @@ var displayAllRestaurants = function () {
             <p class="cuisine-type">Cuisine : ${class1.restaurants[i].CuisineType}</p>
             <p class="cuisine-type">Location : ${class1.restaurants[i].Localisation}</p>
             <button class="update-btn" data-id="${this.restaurants[i].id}">update</button>
-            <button class="remove" data-id="${this.restaurants[i].id}">remove</button>
+            <button class="remove-btn" data-id="${this.restaurants[i].id}">remove</button>
         </div>
     </div>`
     );
@@ -99,21 +98,20 @@ var displayAllRestaurants = function () {
 /////////////////////////////////////////////////////////////////////
 
 var removerestaurents = function (id) {
-  for (let i = 0; i < this.restaurents.length; i++) {
-    if (this.restaurents[i].id === id) {
-      this.restaurents.splice(i, 1);
-      console.log(this.restaurents);
+  for (let i = 0; i < this.restaurants.length; i++) {
+    if (this.restaurants[i].id === id) {
+      this.restaurants.splice(i, 1);
+      console.log(this.restaurants);
     }
   }
-  this.numberOfrestaurants = this.restaurents.length;
+  this.numberOfrestaurants = this.restaurants.length;
   this.displayAllRestaurants();
 };
 /////////////////////////////////
 // Add event listener for remove buttons
-$(".remove-btn").on("click", function () {
-  var restaurentsId = $(this).data("id");
-  class1.removerestaurents(restaurenttId);
-});
+// $(".remove-btn").on("click", function () {
+
+// });
 
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -240,6 +238,10 @@ $(document).on("click", ".update-btn", function () {
       $("#updatepicture-link").val(class1.restaurants[i].image);
     }
   }
+});
+$(document).on("click", ".remove-btn", function () {
+  var restaurentsId = $(this).data("id");
+  class1.removerestaurents(restaurentsId);
 });
 
 $(document).on("click", "#update-btn", function () {
